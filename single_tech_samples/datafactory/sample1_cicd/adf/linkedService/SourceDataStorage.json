@@ -4,7 +4,7 @@
     "annotations": [],
     "type": "AzureBlobFS",
     "typeProperties": {
-      "url": "https://mdwdofsstordev2t7ni.dfs.core.windows.net",
+      "url": "https://mdwdofsstordevursyb.dfs.core.windows.net",
       "accountKey": {
         "type": "AzureKeyVaultSecret",
         "store": {
