@@ -15,7 +15,7 @@ resources:
       type: github
       endpoint: mdwdo-adf-github
       name: https://github.com/slobodz/modern-data-warehouse-dataops
-      ref: adf_publish
+      ref: main
 
 # The deployment script sets this as a Pipeline Variable, but you may choose to set it here in the definition
 #
