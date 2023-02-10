@@ -13,8 +13,8 @@ resources:
   repositories:
     - repository: mdwdataops_adfpublish
       type: github
-      endpoint: mdwdo-adf-github
-      name: https://github.com/slobodz/modern-data-warehouse-dataops
+      endpoint: testGHSrvConn
+      name: https://github.com/slobodz/datafactory
       ref: main
 
 # The deployment script sets this as a Pipeline Variable, but you may choose to set it here in the definition
