@@ -13,7 +13,7 @@ resources:
   repositories:
     - repository: mdwdataops_adfpublish
       type: github
-      endpoint: testGHSrvConn
+      endpoint: testGHSrvCon
       name: https://github.com/slobodz/datafactory
       ref: main
 
