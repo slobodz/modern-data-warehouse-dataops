@@ -14,8 +14,10 @@ resources:
     - repository: mdwdataops_adfpublish
       type: github
       endpoint: testGHSrvCon
-      name: modern-data-warehouse-dataops
-      ref: adf_publish
+      name: slobodz/modern-data-warehouse-dataops
+
+pool:
+  vmImage: 'ubuntu-latest'
 
 # The deployment script sets this as a Pipeline Variable, but you may choose to set it here in the definition
 #
