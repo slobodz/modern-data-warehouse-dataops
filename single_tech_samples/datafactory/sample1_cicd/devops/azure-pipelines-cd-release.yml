@@ -13,8 +13,7 @@ resources:
   repositories:
     - repository: mdwdataops_adfpublish
       type: github
-      endpoint: testGHSrvCon
-      name: https://github.com/slobodz/datafactory
+      name: slobodz/datafactory
       ref: adf_publish
 
 # The deployment script sets this as a Pipeline Variable, but you may choose to set it here in the definition
