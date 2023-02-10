@@ -13,6 +13,7 @@ resources:
   repositories:
     - repository: mdwdataops_adfpublish
       type: github
+      endpoint: testGHSrvCon
       name: slobodz/datafactory
       ref: adf_publish
 
