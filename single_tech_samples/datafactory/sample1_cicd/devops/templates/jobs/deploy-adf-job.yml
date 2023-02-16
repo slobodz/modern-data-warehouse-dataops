@@ -20,6 +20,18 @@ jobs:
 
             # https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-powershell
             - task: AzurePowerShell@4
+              displayName: 'List folders in'
+              inputs:
+                azureSubscription: ${{ parameters.serviceConnection }}
+                ScriptType: 'InlineScript'
+                Inline: |
+                  # You can write your azure powershell scripts inline here. 
+                  # You can also pass predefined and custom variables to this script using arguments
+                  Write-Host 'Checking folders'
+                  Get-Item "$(Pipeline.Workspace)\adf_publish\"
+                azurePowerShellVersion: LatestVersion
+
+            - task: AzurePowerShell@4
               displayName: 'Azure PowerShell script: Stop ADF triggers'
               inputs:
                 azureSubscription: ${{ parameters.serviceConnection }}

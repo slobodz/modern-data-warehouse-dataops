@@ -31,11 +31,11 @@ stages:
       - group: mdwdo-adf-release-stg
       - group: mdwdo-adf-release-secrets-stg
     jobs:
-      - template: /single_tech_samples/datafactory/sample1_cicd/devops/templates/jobs/deploy-adf-job.yml
+      - template: /single_tech_samples/datafactory/sample1_cicd/devops/templates/jobs/deploy-adf-job.yml@self
         parameters:
           environmentName: 'STG'
           serviceConnection: 'mdwdo-adf-serviceconnection-stg'
-      - template: /single_tech_samples/datafactory/sample1_cicd/devops/templates/jobs/integration-test-adf-job.yml
+      - template: /single_tech_samples/datafactory/sample1_cicd/devops/templates/jobs/integration-test-adf-job.yml@self
         parameters:
           environmentName: 'STG'
           serviceConnection: 'mdwdo-adf-serviceconnection-stg'
